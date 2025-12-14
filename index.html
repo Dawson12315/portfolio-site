@@ -1,23 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dawson's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <header>
-        <h1>Dawson Brennen Hudson</h1>
-        <p>Software Developer Portfolio</p>
-    </header>
-
-    <main>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="index.html"
+          ><img src="images/logo.svg" class="logo" alt="DBHworks portfolio"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero">
+        <h1>Hello, I'm Dawson Hudson</h1>
+        <p>Software Engineer | Full-Stack Developer</p>
+        <p>
+          Building modern, scalable web applications with a foundation in
+          real-world leadership and operations.
+        </p>
+      </div>
+      <main role="main">
+        <div class="skills">
+          <h2>Snapshot of Skills:</h2>
+          <section class="front-end">
+            <h3>Front-End:</h3>
+            <ul>
+              <li>HTML, CSS, Responsive Design</li>
+              <li>Flexbox, Grid, Bootstrap</li>
+              <li>JavaScript, DOM, GSAP</li>
+              <li>React (components, hooks, routing)</li>
+            </ul>
+          </section>
+          <section class="back-end">
+            <h3>Back-End:</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>RESTful APIs</li>
+              <li>MongoDB</li>
+            </ul>
+          </section>
+          <section class="tools">
+            <h3>Tooling & Workflow:</h3>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Postman</li>
+              <li>CLI Prompting</li>
+              <li>Vercel Deployment</li>
+              <li>Firebase / Firestore</li>
+              <li>Cloudflare DNS & Security</li>
+            </ul>
+          </section>
+        </div>
+        <div class="experience">
+          <h2>Experience:</h2>
+          <p>Why My Background Matters:</p>
+          <ul>
+            <li>Led and trained teams across 14 locations</li>
+            <li>Operated in mission-critical Air Force environments</li>
+            <li>Strong communication, documentation, and accountability</li>
+            <li>Comfortable owning problems end-to-end</li>
+          </ul>
+        </div>
+        <div class="featured">
+          <h2>Featured Projects:</h2>
+          <!-- Keep to just 3 projects -->
+          <section>
+            <h3>Projects in Progress</h3>
+            <p>
+              I am currently building full-stack applications as part of my
+              software engineering training. These projects focus on real-world
+              workflows including REST APIs, authentication, databases, and
+              deployment. Live demos and repositories will be added here
+              shortly.
+            </p>
+          </section>
+          <p>
+            Check Out the rest of my projects <a href="projects.html">HERE</a>.
+          </p>
+        </div>
+      </main>
+      <main>
         <section id="projects-section">
-            <h2>Projects</h2>
-            <div id="projects"></div>
+          <h2>Projects</h2>
+          <div id="projects"></div>
         </section>
-    </main>
+      </main>
+    </div>
     <script type="module" src="main.js"></script>
-</body>
+  </body>
 </html>

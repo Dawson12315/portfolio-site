@@ -1,0 +1,76 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(144, 161, 153)
+}
+header {
+  display: flex;
+  margin:0;
+  background-color: rgb(73, 108, 103);
+}
+header img {
+  margin-top: 10px;
+  width: 8rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+nav ul{
+  padding-left: 10px;
+}
+nav li{
+  display: inline-block;
+  color: white;
+  font-size: 13px;
+  margin-right: 5px;
+}
+nav a:visited{
+  color: white;
+  text-decoration: none;
+}
+nav a{
+  color:white;
+  text-decoration: none;
+}
+nav a:hover{
+  color: #97b1e6af;
+  text-transform:uppercase
+}
+
+.hero{
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10%;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.skills {
+  background: white;
+}
+.experience{
+  background: white
+}
+.featured{
+  background: white
+}
+#projects {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #020617;
+  border: 1px solid #1f2937;
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem;
+}
