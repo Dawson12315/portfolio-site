@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Projects | Dawson Hudson</title>
+    <meta
+      name="description"
+      content="Projects by Dawson Hudson — backend-focused software engineer building APIs and full-stack applications." />
+
+    <meta property="og:title" content="Projects | Dawson Hudson" />
+    <meta
+      property="og:description"
+      content="Explore projects by Dawson Hudson, including APIs and full-stack applications." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="projects.css">
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="images/logo.svg" class="logo" alt="DBHworks portfolio"
+      /></a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <section class="hero" aria-labelledby="projects-hero-title">
+        <h1 id="projects-hero-title">Projects</h1>
+        <p>
+          A small selection of work focused on backend development, APIs, and
+          practical full-stack projects.
+        </p>
+        <p class="hero-cta">
+          <a href="contact.html">Contact</a>
+          <a href="index.html">Back Home</a>
+        </p>
+      </section>
+
+      <main id="main">
+        <section class="featured" aria-labelledby="projects-title">
+          <h2 id="projects-title">Featured Projects</h2>
+          <p>
+            Projects will load here automatically. Each card includes a preview,
+            a short summary, and links.
+          </p>
+
+          <!-- Firebase-rendered project cards will be inserted here -->
+          <div id="projectsGrid" aria-live="polite"></div>
+
+          <!-- Barebones fallback (shown if JS fails or while loading) -->
+          <noscript>
+            <p>
+              JavaScript is required to load projects dynamically. Please enable
+              JavaScript or view my GitHub profile.
+            </p>
+          </noscript>
+        </section>
+      </main>
+    </div>
+
+    <footer aria-label="Footer">
+      <ul class="footerList">
+        <li>
+          <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn" />
+          <a
+            href="https://www.linkedin.com/in/dawson-hudson-3435031b3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <img src="/images/github-142-svgrepo-com.svg" alt="GitHub" />
+          <a
+            href="https://github.com/Dawson12315"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <img src="/images/file-download-svgrepo-com.svg" alt="Download" />
+          <a href="/files/Dawson Hudson Cover Letter.docx" download
+            >Cover Letter</a
+          >
+        </li>
+        <li>
+          <img src="/images/file-download-svgrepo-com.svg" alt="Download" />
+          <a href="/files/Dawson Hudson Resume.docx" download>Resume</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
