@@ -1,102 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dawson's Portfolio</title>
+    <title>Dawson Hudson | Software Engineer (Backend-Focused)</title>
+    <meta
+      name="description"
+      content="Backend-focused software engineer building REST APIs, CRUD applications, and full-stack projects with Node/Express, MongoDB, and Python."
+    />
+    <meta property="og:title" content="Dawson Hudson | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Backend-focused engineer building reliable APIs and full-stack applications."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header>
+      <a href="index.html"
+        ><img src="images/logo.svg" class="logo" alt="DBHworks portfolio"
+      /></a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="wrapper">
-      <header>
-        <a href="index.html"
-          ><img src="images/logo.svg" class="logo" alt="DBHworks portfolio"
-        /></a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="hero">
-        <h1>Hello, I'm Dawson Hudson</h1>
-        <p>Software Engineer | Full-Stack Developer</p>
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          src="images/svgviewer-output.svg"
+          alt="Waving hand"
+          class="nextTo"
+        />
+        <h1 id="hero-title" class="nextTo">
+          Hello, I'm <span id="name">Dawson Hudson</span>
+        </h1>
+        <p><span id="typing">I am a</span><span class="caret">|</span></p>
         <p>
           Building modern, scalable web applications with a foundation in
           real-world leadership and operations.
         </p>
-      </div>
-      <main role="main">
-        <div class="skills">
-          <h2>Snapshot of Skills:</h2>
-          <section class="front-end">
-            <h3>Front-End:</h3>
+        <p class="hero-cta">
+          <a href="projects.html">View Projects</a>
+          <a href="contact.html">Contact</a>
+        </p>
+      </section>
+      <main id="main">
+        <section class="skills" aria-labelledby="skills-title">
+          <h2 id="skills-title">Skills Snapshot</h2>
+
+          <section class="front-end" aria-labelledby="frontend-title">
+            <h3 id="frontend-title">Front End</h3>
             <ul>
-              <li>HTML, CSS, Responsive Design</li>
-              <li>Flexbox, Grid, Bootstrap</li>
-              <li>JavaScript, DOM, GSAP</li>
-              <li>React (components, hooks, routing)</li>
+              <li>HTML5 & CSS3 (semantic markup, responsive layouts)</li>
+              <li>Flexbox & CSS Grid</li>
+              <li>JavaScript (DOM manipulation)</li>
+              <li>React (foundational components & hooks)</li>
             </ul>
           </section>
-          <section class="back-end">
-            <h3>Back-End:</h3>
+
+          <section class="back-end" aria-labelledby="backend-title">
+            <h3 id="backend-title">Back End</h3>
             <ul>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>RESTful APIs</li>
-              <li>MongoDB</li>
+              <li>Node.js & Express.js</li>
+              <li>RESTful APIs & CRUD operations</li>
+              <li>MongoDB & Mongoose (schemas, queries)</li>
+              <li>Async/Await & error handling</li>
+              <li>MVC architecture fundamentals</li>
             </ul>
           </section>
-          <section class="tools">
-            <h3>Tooling & Workflow:</h3>
+
+          <section class="tools" aria-labelledby="tools-title">
+            <h3 id="tools-title">Tooling & Workflow</h3>
             <ul>
-              <li>Git / GitHub</li>
-              <li>Postman</li>
-              <li>CLI Prompting</li>
-              <li>Vercel Deployment</li>
+              <li>Git & GitHub (version control)</li>
+              <li>Postman (API testing & validation)</li>
+              <li>npm & package management</li>
+              <li>Command Line Interface (CLI)</li>
+              <li>Vercel deployment</li>
               <li>Firebase / Firestore</li>
-              <li>Cloudflare DNS & Security</li>
+              <li>Cloudflare DNS & security</li>
             </ul>
           </section>
-        </div>
-        <div class="experience">
-          <h2>Experience:</h2>
-          <p>Why My Background Matters:</p>
+        </section>
+        <section class="experience" aria-labelledby="experience-title">
+          <h2 id="experience-title">Experience</h2>
+          <p>Why my background matters:</p>
           <ul>
-            <li>Led and trained teams across 14 locations</li>
-            <li>Operated in mission-critical Air Force environments</li>
-            <li>Strong communication, documentation, and accountability</li>
-            <li>Comfortable owning problems end-to-end</li>
+            <li>
+              Led and trained cross-functional teams across 14 high-volume
+              locations
+            </li>
+            <li>
+              Worked in mission-critical U.S. Air Force environments requiring
+              precision, reliability, and accountability
+            </li>
+            <li>
+              Strong communicator with experience in technical documentation,
+              process standardization, and team coordination
+            </li>
+            <li>
+              Comfortable owning problems end-to-end, from identifying root
+              causes to implementing long-term solutions
+            </li>
           </ul>
-        </div>
-        <div class="featured">
-          <h2>Featured Projects:</h2>
-          <!-- Keep to just 3 projects -->
-          <section>
+        </section>
+        <section class="featured" aria-labelledby="projects-title">
+          <h2 id="projects-title">Featured Projects</h2>
+          <article>
             <h3>Projects in Progress</h3>
             <p>
               I am currently building full-stack applications as part of my
               software engineering training. These projects focus on real-world
               workflows including REST APIs, authentication, databases, and
-              deployment. Live demos and repositories will be added here
-              shortly.
+              deployment. Live demos and repositories will be added here soon.
             </p>
-          </section>
-          <p>
-            Check Out the rest of my projects <a href="projects.html">HERE</a>.
-          </p>
-        </div>
-      </main>
-      <main>
-        <section id="projects-section">
-          <h2>Projects</h2>
-          <div id="projects"></div>
+          </article>
         </section>
       </main>
     </div>
+    <footer aria-label="Footer">
+      <ul class="footerList">
+        <li>
+          <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn" />
+          <a
+            href="https://www.linkedin.com/in/dawson-hudson-3435031b3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <img src="/images/github-142-svgrepo-com.svg" alt="GitHub" />
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <img src="/images/file-download-svgrepo-com.svg" alt="Download" />
+          <a href="/files/Dawson Hudson Cover Letter.docx" download
+            >Cover Letter</a
+          >
+        </li>
+        <li>
+          <img src="/images/file-download-svgrepo-com.svg" alt="Download" />
+          <a href="/files/Dawson Hudson Resume.docx" download>Resume</a>
+        </li>
+      </ul>
+    </footer>
     <script type="module" src="main.js"></script>
   </body>
 </html>

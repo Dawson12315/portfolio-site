@@ -2,12 +2,30 @@ body {
   font-family: system-ui, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(144, 161, 153)
+  background-color: rgb(144, 161, 153);
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 header {
+  position: sticky;
+  top: 0;
+  width: 100%;
   display: flex;
-  margin:0;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
   background-color: rgb(73, 108, 103);
+  z-index: 10;
 }
 header img {
   margin-top: 10px;
@@ -15,62 +33,189 @@ header img {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-nav ul{
-  padding-left: 10px;
+nav {
+  margin-left: auto;
 }
-nav li{
+nav ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+nav li {
   display: inline-block;
   color: white;
   font-size: 13px;
-  margin-right: 5px;
+  margin-right: 0;
 }
-nav a:visited{
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.35rem;
+  border-radius: 6px;
+}
+nav a:visited {
   color: white;
   text-decoration: none;
 }
-nav a{
-  color:white;
-  text-decoration: none;
-}
-nav a:hover{
+nav a:hover {
   color: #97b1e6af;
-  text-transform:uppercase
+  text-transform: uppercase;
+}
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.hero{
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  background: white;
+  color: black;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 2px solid black;
+  z-index: 999;
+}
+
+.skip-link:focus {
+  left: 10px;
+}
+
+.hero {
   text-align: center;
   background-color: white;
   color: black;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 10%;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  border-radius: 18px;
+  border: 2px solid black;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
+.hero img {
+  width: 40px;
+  padding-right: 20px;
+}
+.caret {
+  display: inline-block;
+  margin-left: 4px;
+  font-weight: 600;
+  animation: blink 2s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+.nextTo {
+  display: inline-block;
+  vertical-align: middle;
+}
+#name {
+  color: rgba(255, 111, 0, 0.804);
+}
+.caret {
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.hero-cta a {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 2px solid black;
+  background: rgb(73, 108, 103);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-cta a:hover {
+  opacity: 0.9;
+  text-transform: none;
+}
+
 main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0;
 }
-.skills {
+
+.skills,
+.experience,
+.featured {
   background: white;
-}
-.experience{
-  background: white
-}
-.featured{
-  background: white
-}
-#projects {
-  display: grid;
-  gap: 1rem;
-}
-
-.project-card {
+  border-radius: 30px;
   padding: 1rem;
-  border-radius: 0.5rem;
-  background: #020617;
-  border: 1px solid #1f2937;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-.project-card h3 {
-  margin: 0 0 0.5rem;
+.skills ul,
+.experience ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+h3 {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+footer {
+  font-size: 10px;
+  background-color: rgb(73, 108, 103);
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+}
+
+.footerList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerList li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer img {
+  height: 20px;
 }
